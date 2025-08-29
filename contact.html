@@ -1,0 +1,118 @@
+<!-- ,  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Aurora — Get in touch for design and development projects. Book a free discovery call." />
+  <title>Contact — Aurora Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+    h1,h2,h3{font-family: 'Poppins', Inter, sans-serif}
+  </style>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="bg-slate-50 text-slate-800 antialiased">
+  <div class="w-full max-w-none">
+    <header class="w-full bg-white/60 backdrop-blur sticky top-0 z-40 border-b border-slate-200">
+      <div class="w-full px-6 md:px-10 lg:px-16 py-3 flex items-center justify-between">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-violet-600 to-cyan-400 text-white flex items-center justify-center font-bold">A</div>
+          <span class="hidden sm:block font-semibold">Aurora</span>
+        </a>
+        <nav class="hidden md:flex gap-6 items-center">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-slate-600 hover:text-violet-600">Home</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-slate-600 hover:text-violet-600">About</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-slate-700 font-medium">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="w-full px-6 md:px-10 lg:px-16 py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <section class="lg:col-span-2">
+          <h1 class="text-3xl font-bold">Let's work together</h1>
+          <p class="text-slate-600 mt-2">Share a few details and we’ll get back within 48 hours. Prefer email? hello@aurora.design</p>
+
+          <form id="contactForm" class="mt-6 bg-white rounded-2xl p-6 shadow border border-slate-100" novalidate>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="text-sm font-medium">Name</label>
+                <input id="name" name="name" required type="text" class="mt-1 w-full p-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-violet-200" placeholder="Your name" />
+                <p id="nameError" class="text-xs text-rose-600 mt-1 hidden">Please enter your name.</p>
+              </div>
+
+              <div>
+                <label for="email" class="text-sm font-medium">Email</label>
+                <input id="email" name="email" required type="email" class="mt-1 w-full p-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-violet-200" placeholder="you@company.com" />
+                <p id="emailError" class="text-xs text-rose-600 mt-1 hidden">Please enter a valid email.</p>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <label for="company" class="text-sm font-medium">Company (optional)</label>
+              <input id="company" name="company" type="text" class="mt-1 w-full p-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-violet-200" placeholder="Company name" />
+            </div>
+
+            <div class="mt-4">
+              <label for="message" class="text-sm font-medium">Project brief</label>
+              <textarea id="message" name="message" rows="6" required class="mt-1 w-full p-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-violet-200" placeholder="Tell us about your project, timeline, and budget..."></textarea>
+              <p id="messageError" class="text-xs text-rose-600 mt-1 hidden">Please include a short project brief.</p>
+            </div>
+
+            <div class="mt-4 flex items-center gap-3">
+              <button id="submitBtn" type="submit" class="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-violet-600 text-white font-semibold hover:bg-violet-700 transition">Send message</button>
+              <button id="clearBtn" type="button" class="px-4 py-3 rounded-lg border border-slate-200 hover:bg-slate-50">Clear</button>
+            </div>
+
+            <p id="formSuccess" class="mt-4 text-sm text-emerald-700 hidden">Thanks! We received your message and will be in touch soon.</p>
+          </form>
+        </section>
+
+        <aside>
+          <div class="rounded-2xl overflow-hidden shadow">
+            <img src="https://images.pexels.com/photos/8111862/pexels-photo-8111862.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Office workspace" class="w-full h-44 object-cover" />
+          </div>
+
+          <div class="mt-4 p-4 rounded-lg bg-white border border-slate-100 shadow-sm">
+            <h3 class="font-semibold">Visit & contact</h3>
+            <address class="not-italic text-sm text-slate-600 mt-2">
+              Aurora Studio<br />
+              128 Willow Ave, San Francisco, CA
+            </address>
+            <div class="mt-3 text-sm">
+              <a href="mailto:hello@aurora.design" class="text-violet-600 hover:underline">hello@aurora.design</a>
+              <div class="text-slate-500 mt-1">Mon–Fri, 9am–5pm PST</div>
+            </div>
+          </div>
+
+          <div class="mt-4 p-4 rounded-lg bg-white border border-slate-100 shadow-sm">
+            <h4 class="font-semibold">Follow us</h4>
+            <div class="flex gap-3 mt-3">
+              <a href="#" class="p-2 rounded-md bg-slate-100 hover:bg-slate-200">Twitter</a>
+              <a href="#" class="p-2 rounded-md bg-slate-100 hover:bg-slate-200">Dribbble</a>
+              <a href="#" class="p-2 rounded-md bg-slate-100 hover:bg-slate-200">LinkedIn</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="w-full border-t border-slate-200 bg-white/60">
+      <div class="w-full px-6 md:px-10 lg:px-16 py-6 flex items-center justify-between">
+        <div class="text-sm text-slate-600">© 2025 Aurora Studio</div>
+        <nav class="flex gap-4">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-sm text-slate-600 hover:text-violet-600">Home</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-sm text-slate-600 hover:text-violet-600">About</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
